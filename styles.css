@@ -24,19 +24,48 @@ body {
 /* Comfortable reading width */
 main { max-width: 65ch; margin: 0 auto; padding: 1rem; }
 
-/* Simple top nav */
-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem; }
-nav a { text-decoration: none; color: var(--accent); }
-nav a:hover { text-decoration: underline; }
+/* Top nav centered with spacing */
+nav {
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  margin-top: 1.5rem;        /* space from very top */
+  margin-bottom: 1.5rem;     /* space below nav */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;               /* slightly wider spacing */
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
 
 /* Responsive images */
 img { max-width: 100%; height: auto; display: block; }
 
-/* Center the hero image */
+/* Center hero image with spacing */
 figure {
   display: flex;
-  justify-content: center; /* horizontally center the image */
-  margin: 1.5rem 0;
+  justify-content: center;
+  margin: 1.5rem 0 2rem; /* top, sides, bottom */
+}
+
+/* Center main text */
+main {
+  max-width: 65ch;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center; /* centers heading + paragraph */
 }
 
 /* Clear keyboard focus (use :focus-visible for better UX) */
