@@ -32,6 +32,13 @@ nav a:hover { text-decoration: underline; }
 /* Responsive images */
 img { max-width: 100%; height: auto; display: block; }
 
+/* Center the hero image */
+figure {
+  display: flex;
+  justify-content: center; /* horizontally center the image */
+  margin: 1.5rem 0;
+}
+
 /* Clear keyboard focus (use :focus-visible for better UX) */
 a, button, input, textarea, select { outline: none; }
 :focus-visible {
